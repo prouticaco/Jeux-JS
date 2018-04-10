@@ -1,0 +1,83 @@
+
+$(function() {
+
+    let anim_id;
+
+                                       //SAVING DOM OBJECTS TO VARIABLES
+    let container = $('#container');
+    let car = $('#car');
+    let car1 = $('#car_1');
+    let car2 = $('#car_2');
+    let car3 = $('#car_3');
+    let line1 = $('#line_1');
+    let line2 = $('#line_2');
+    let line3 = $('#line_3');
+    let restart_div = $('#restart_div');
+    let restart_btn = $('#restart');
+    let score = $('#score');
+
+                                    //SAVING INITIAL SETUP
+
+    let container_left = parseInt(container.css('left'));
+    let container_width = parseInt(container.width());
+    let container_height = parseInt(container.height());
+    let car_width = parseInt(car.width());
+    let car_height = parseInt(car.height());
+
+                                 // START WITH GAME OVER ON FALSE
+    let game_over = false;
+
+                                 // COUNT THE SCORE OF THE PLAYER
+
+    let score_counter = 1;
+
+                                 // SAVING SPEED
+    let speed = 2;
+    let line_speed = 5;
+
+                                // SET MOVEMENT ON FALSE 
+
+    let move_right = false;
+    let move_left = false;
+    let move_up = false;
+    let move_down = false;
+
+
+
+                           // SETTLE THE VEHICLE'S MOVEMENTS WITH THE RIGHT KEYCODE //
+
+    $(document).on('keydown', function(e) {
+        if (game_over === false) {
+            let key = e.keyCode;
+            if (key === 37  && move_left === false) {
+                move_left = requestAnimationFrame(left);
+            } else if (key === 39  && move_right === false) {
+                move_right = requestAnimationFrame(right);
+            } else if (key === 38   && move_up === false) {
+                move_up = requestAnimationFrame(up);
+            } else if (key === 40  && move_down === false) {
+                move_down = requestAnimationFrame(down);
+            }
+        }
+    });
+
+                           // REFRESH THE ANIMATION
+
+    $(document).on('keyup', function(e) {
+        if (game_over === false) {
+            let key = e.keyCode;
+            if (key === 37) {
+                cancelAnimationFrame(move_left);
+                move_left = false;
+            } else if (key === 39) {
+                cancelAnimationFrame(move_right);
+                move_right = false;
+            } else if (key === 38) {
+                cancelAnimationFrame(move_up);
+                move_up = false;
+            } else if (key === 40) {
+                cancelAnimationFrame(move_down);
+                move_down = false;
+            }
+        }
+    });
