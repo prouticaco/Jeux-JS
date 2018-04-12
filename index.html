@@ -1,85 +1,53 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="description" content="Découvrez le nouveu jeu Hot Wheels sur votre navigateur !">
-    <title> Hot Wheels game </title>
-  </head>
-
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" centent="Description SEO"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <title> Ma page Web</title>
+</head>
 <body>
-    <div id="help">
-        <p>Controls: Up, down, right and left arrow key</p>
+    <div class="cover"></div>
+<header>
+    <div class='social'>
+        <ul>
+            <a href="https://www.facebook.com/"><li><img src="images/iconmonstr-facebook-1-240.png"/></li></a>
+            <a href="https://www.instagram.com/"><li><img src="images/iconmonstr-instagram-11-240.png"/></li></a>
+            <a href="https://twitter.com/?lang=fr"><li><img src="images/iconmonstr-twitter-1-240.png"/></li></a>
+            <a href="https://www.youtube.com/"><li><img src="images/iconmonstr-youtube-6-240.png"/></li></a>
+        </ul>
     </div>
-    <div id="score_div">
-        Score: <span id="score">0</span>
+    <a href="file:///Users/mariofayolle/Desktop/JEUX-JSSS/index.html"><div class="logo_HW"> <img src="images/HW_Logo.png"/></div></a>
+</header>
+<main>
+    <div class="title">
+        <h1>Hot wheels Extreme Game !</h1>
     </div>
-    <!-- Container acting as a canvas -->
-    <div id="container">
-      <!-- Let's begin by creating the lines in the middle of the road -->
-        <div id="line_1" class="line"></div>
-        <div id="line_2" class="line"></div>
-        <div id="line_3" class="line"></div>
-
-        <!-- Now let's create our car -->
-
-        <div id="car" class="car">
-            <div class="front_glass"></div>
-            <div class="back_glass"></div>
-            <div class="front_light_left"></div>
-            <div class="front_light_right"></div>
-            <div class="front_tire_left"></div>
-            <div class="front_tire_right"></div>
-            <div class="back_tire_left"></div>
-            <div class="back_tire_right"></div>
-        </div>
-
-        <!-- Creation of the other cars -->
-
-        <div id="car_1" class="car">
-            <div class="front_glass"></div>
-            <div class="back_glass"></div>
-            <div class="front_light_left"></div>
-            <div class="front_light_right"></div>
-            <div class="front_tire_left"></div>
-            <div class="front_tire_right"></div>
-            <div class="back_tire_left"></div>
-            <div class="back_tire_right"></div>
-        </div>
-        <div id="car_2" class="car">
-            <div class="front_glass"></div>
-            <div class="back_glass"></div>
-            <div class="front_light_left"></div>
-            <div class="front_light_right"></div>
-            <div class="front_tire_left"></div>
-            <div class="front_tire_right"></div>
-            <div class="back_tire_left"></div>
-            <div class="back_tire_right"></div>
-        </div>
-        <div id="car_3" class="car">
-            <div class="front_glass"></div>
-            <div class="back_glass"></div>
-            <div class="front_light_left"></div>
-            <div class="front_light_right"></div>
-            <div class="front_tyre_left"></div>
-            <div class="front_tyre_right"></div>
-            <div class="back_tyre_left"></div>
-            <div class="back_tyre_right"></div>
-        </div>
-
-        <!-- restart button -->
-        <div id="restart_div">
-            <button id="restart">
-                Restart<br>
-                <small class="small_text">(press Enter)</small>
-            </button>
-        </div>
+    <div class="intro_text">
+        <h2>Que la force HOT WHEELS sois avec toi !</h2>
+        <p>Fatiguer de jouer dehors avec tes amis et tes nerfs ?</br>Pas de soucis, rentrez chez toi faire une pause et affronte les dans un tout nouveau type de duel NERF !</br>Qui sera le meilleur à dévier les projectiles de son adversaire et à marquer 10 points en premier ?</br>Méfie toi le terrain est semé de bonus qui vont changer les règles du jeu au long de la partie pour vous destabiliser </br></br> Toujours plus vite et rien ne les arrete.</br> Race to win..</p>
     </div>
+    <div class="intro_suite">
+        <p>Rendez-vous inédit au 2.0 Bar le 13 Avril 2018 pour vivre une expérience exeptionelle et gagner une place pour la prochaine Paris Game Week !</p>
+    </div>
+    <div class="cover2"></div>
+    <div class='logo_battleforce'>
+        <img src="images/logojeu.png"/>
+    </div>
+    <div class="jeu"></div>
+    <div class="policy">
+        <ul>
+            <a href="http://corporate.mattel.com/"><li><img src="images/copyright.png"/></li></a>
+            <a href="https://play.hotwheels.com/fr-fr/index.html"><li>HOT WEELS, 2018 |</li></a>
+            <a href="http://corporate.mattel.com/global/fr-FR/terms-conditions.aspx"><li>Conditions d'utilisations |</li></a>
+            <a href="http://corporate.mattel.com/EEA/privacy/"><li>Politique de confidentialité</li></a>
+        </ul>
+    </div>
+</main>
 
-
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/main.js"></script>
+<script src="scripts/animations.js" type='text/javascript'></script>
 </body>
-
-</html>

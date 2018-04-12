@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 52px;
+}
+
+header ul{
+    position: relative;
+    list-style: none;
+    float: right;
+    padding-right: 15px 0px;
+    right: 20px;
+}
+
+header li{
+    display: inline-block;
+}
+
+
+.social img{
+    width: 25px;
+}
+
+
+
+.title{
+    position: relative;
+    opacity: 1;
+    top: 70px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.logo_HW img{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    left: 20px;
+    top: 10px;
+}
+
+.cover{
+    width: 100%;
+    height: 900px;
+    background: url('../images/style.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+}
+
+
+.intro_text{
+    line-height: 24px;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    top: 400px;
+    left: 140px;
+    font-family: 'Jua', sans-serif;
+    color: white;
+}
+
+.intro_text h2{
+    color: #34495e;
+    font-size: 30px;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.intro_suite{
+    position: relative;
+    top: 450px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Jua', sans-serif;
+
+}
+
+.cover2{
+    width: 100%;
+    height: 900px;
+    background: url('../images/fond2.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 900px;
+}
+
+.logo_battleforce{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 500px;
+}
+
+.jeu{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    top: 550px;
+    left: 530px;
+}
+
+.policy{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 650px;
+}
+
+.policy a{
+    text-decoration: none;
+    color: black;
+}
+
+.policy ul{
+    position: relative;
+    list-style: none;
+}
+
+.policy li{
+    display: inline-block;
+}
+
+.policy li:hover{
+    color: white;
+}
+
+.policy img{
+    width: 15px;
+}
