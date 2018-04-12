@@ -34,11 +34,6 @@ h2 {
   text-align:center;
 }
 
-.text_intro {
-	text-align:center;
-}	
-
-
 
 .title{
     position: relative;
@@ -75,6 +70,7 @@ h2 {
     left: 140px;
     font-family: 'Jua', sans-serif;
     color: white;
+    text-align:center;
 }
 
 .intro_text h2{
