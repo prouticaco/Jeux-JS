@@ -280,12 +280,13 @@ $(function() {
         let width_1 = $div1.outerWidth(true) // SAME WITH WIDTH
         let left_top = left_1 + top_1 // TOP AND LEFT POSITION 
         let height_width = height_1 + width_1 // HEIGHT AND WIDTH 
+        
         let left_2 = $div2.offset().left 
         let top_2 = $div2.offset().top
         let height_2 = $div2.outerHeight(true)
         let width_2 = $div2.outerWidth(true)
-        let left_top_2 = left_2 + top_2
-        let height_width_2 = height_2 + width_2
+        let left_top_2 = top_2 + height_2
+        let height_width_2 = left_2 + width_2
         
         // IF LEFT AND TOP POSITION OF $DIV1 IS INFERIOR AS THE TOP OF THE $DIV2 RETURN FALSE
         // IF TOP OF $DIV1 IS SUPERIOR AS THE HEIGHT AND WIDTH OF $DIV2 RETURN FALSE 
