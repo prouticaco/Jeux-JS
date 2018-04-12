@@ -48,6 +48,65 @@
         </ul>
     </div>
 </main>
+<div id="help">
+        <p>Controls: Up, down, right and left arrow key</p>
+    </div>
+    <div id="score_div">
+        Score: <span id="score">0</span>
+    </div>
+    <!-- Container acting as a canvas -->
+    <div id="container">
+      <img id ="bg" src="images/road.png" alt="">
+      <!-- Let's begin by creating the lines in the middle of the road -->
+        <div id="line_1" class="line"></div>
+        <div id="line_2" class="line"></div>
+        <div id="line_3" class="line"></div>
 
+        <!-- Now let's create our car -->
+
+        <div id="car" class="car">
+            <img src="images/F1.png" alt="ok">
+        </div>
+
+        <!-- Creation of the other cars -->
+
+        <div id="car_1" class="car">
+          <img src="images/car1.png" alt="">
+
+        </div>
+        <div id="car_2" class="car">
+          <img src="images/car2.png" alt="">
+
+        </div>
+        <div id="car_3" class="car">
+          <img src="images/car3.png" alt="">
+
+        </div>
+
+        <!-- Creation of the bonus -->
+
+        <div id="bonus" class="bonusCoin">
+          <img src="images/bonus_+50.png" alt="">
+        </div>
+
+
+        <div id="bonus_inv" class="bonusCoin">
+            <img src="images/invisibility.png" alt="bonus invicible">
+        </div>
+
+        <!-- restart button -->
+        <div id="restart_div">
+            <button id="restart">
+                Restart<br>
+                <small class="small_text">(press Enter)</small>
+            </button>
+        </div>
+    </div>
+
+
+
+<script src="scripts/jquery-min.js"></script>
+<script src="scripts/app.js"></script>
 <script src="scripts/animations.js" type='text/javascript'></script>
+
 </body>
