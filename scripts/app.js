@@ -60,12 +60,12 @@ $(function() {
                 // MOVE THE CAR WITH THE CORRECT KEYCODE
 
 
-    $(document).keydown(function(e) {
+    $(document).keydown(function(e) { // KEYDOWN FOR WHEN THE UTILISATOR PRESS A KEY
         if (game_over === false) {
             let key = e.keyCode
             if (key === 81 && move_left === false) {
-                move_left = requestAnimationFrame(left)
-                move_left = true;
+                move_left = requestAnimationFrame(left) // ASK THE NAVIGATOR TO EXECUTE AN ANIMATION
+                move_left = true; // SET THE MOVEMENT ON TRUE 
             } else if (key === 68 && move_right === false) {
                 move_right = requestAnimationFrame(right)
                 move_right = true;
@@ -79,12 +79,12 @@ $(function() {
         }
     });
 
-    $(document).keyup(function(e) {
+    $(document).keyup(function(e) { // KEYUP FOR THE RELEASE OF A KEY
         if (game_over === false) {
             let key = e.keyCode
             if (key === 81) {
-                cancelAnimationFrame(move_left);
-                move_left = false
+                cancelAnimationFrame(move_left); // ASK THE NAVIGATOR TO STOP AN ANIMATION
+                move_left = false // SET THE MOVEMENT ON FALSE 
             } else if (key === 68) {
                 cancelAnimationFrame(move_right);
                 move_right = false
