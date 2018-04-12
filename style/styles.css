@@ -144,8 +144,8 @@ header li{
 
 #container{
     position: relative;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     background: #535c68;
     overflow: hidden;
     margin:auto; 
