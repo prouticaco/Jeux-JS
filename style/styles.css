@@ -290,9 +290,9 @@ h2 {
     margin-top: 50%;
     margin-left: 10%;
     font-size: 35px;
-    background-color: white;
+    background-color: #e1b12c;
     padding: 10px;
-    box-shadow: 4px 4px 0px 1px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2)
     z-index: 100;
 }
 
