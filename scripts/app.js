@@ -285,7 +285,7 @@ $(function() {
         let top_2 = $div2.offset().top
         let height_2 = $div2.outerHeight(true)
         let width_2 = $div2.outerWidth(true)
-        let left_top_2 = top_2 + height_2
+        let top_height_2 = top_2 + height_2
         let left_width_2 = left_2 + width_2
         
         // IF TOP AND HEIGHT POSITION OF $DIV1 IS INFERIOR AS THE TOP OF THE $DIV2 RETURN FALSE
@@ -294,7 +294,7 @@ $(function() {
         // IF LEFT POSITION OF $DIV1 IS SUPERIOR AS LEFT AND WIDTH OF $DIV2 RETURN FALSE 
         // OTHERWISE RETURN TRUE 
   
-        if (top_height < top_2 || top_1 > left_width_2 || left_width < left_2 || left_1 > left_width_2) return false; 
+        if (top_height < top_2 || top_1 > top_height_2 || left_width < left_2 || left_1 > left_width_2) return false; 
         return true;
     }
 
