@@ -115,7 +115,7 @@ $(function() {
     }
 
     function up() { // HOW THE CAR IS MOVING WHEN WE PRESS UP ARROW KEY
-        if (game_over === false && parseInt(car.css('top')) > ) {
+        if (game_over === false && parseInt(car.css('top')) > 0) {
             car.css('top', parseInt(car.css('top')) - 3); // UP SPEED
             move_up = requestAnimationFrame(up)
         }
