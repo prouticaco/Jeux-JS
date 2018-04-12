@@ -50,7 +50,7 @@ $(function() {
 
                          // SET GAME OVER ON FALSE TO LET THE GAME KNOWS WHEN HE FINISH
 
-    let invicible = false
+    let invicible = false // WILL BE USEFUL FOR A BONUS
     let game_over = false
 
 
@@ -65,12 +65,16 @@ $(function() {
             let key = e.keyCode
             if (key === 81 && move_left === false) {
                 move_left = requestAnimationFrame(left)
+                move_left = true;
             } else if (key === 68 && move_right === false) {
                 move_right = requestAnimationFrame(right)
+                move_right = true;
             } else if (key === 90 && move_up === false) {
                 move_up = requestAnimationFrame(up)
+                move_up = true;
             } else if (key === 83 && move_down === false) {
                 move_down = requestAnimationFrame(down)
+                move_down = true;
             }
         }
     });
@@ -97,29 +101,29 @@ $(function() {
                     //CREATE THE FUNCTIONS THAT WILL CONDUCT THE CAR
 
     function left() { // HOW THE CAR IS MOVING WHEN WE PRESS LEFT ARROW KEY
-        if (game_over === false && parseInt(car.css('left')) > 0) {
-            car.css('left', parseInt(car.css('left')) - 5); // SPEED
+        if (game_over === false && parseInt(car.css('left')) > 0) { // AS LONG AS THE GAME IS NOT OVER AND THE CAR LEFT IS SUPERIOR AS 0
+            car.css('left', parseInt(car.css('left')) - 5); // LEFT SPEED, DECREASE LEFT IN ORDER TO GO LEFT
             move_left = requestAnimationFrame(left)
         }
     }
 
     function right() { // HOW THE CAR IS MOVING WHEN WE PRESS RIGHT ARROW KEY
-        if (game_over === false && parseInt(car.css('left')) < container_width - car_width) {
-            car.css('left', parseInt(car.css('left')) + 5); // SPEED
+        if (game_over === false && parseInt(car.css('left')) < container_width - car_width) { // 
+            car.css('left', parseInt(car.css('left')) + 5); // RIGHT SPEED
             move_right = requestAnimationFrame(right)
         }
     }
 
     function up() { // HOW THE CAR IS MOVING WHEN WE PRESS UP ARROW KEY
-        if (game_over === false && parseInt(car.css('top')) > 0) {
-            car.css('top', parseInt(car.css('top')) - 3); // SPEED
+        if (game_over === false && parseInt(car.css('top')) > ) {
+            car.css('top', parseInt(car.css('top')) - 3); // UP SPEED
             move_up = requestAnimationFrame(up)
         }
     }
 
     function down() { // HOW THE CAR IS MOVING WHEN WE PRESS DOWN ARROW KEY
         if (game_over === false && parseInt(car.css('top')) < container_height - car_height) {
-            car.css('top', parseInt(car.css('top')) + 3); // SPEED
+            car.css('top', parseInt(car.css('top')) + 3); // DOWN SPEED
             move_down = requestAnimationFrame(down)
         }
     }
@@ -191,13 +195,13 @@ $(function() {
     // SPAWN THE BOT'S CARS IN THE CONTAINER
 
     function bonus_inv_down(bonus_inv){
-      let bonus_inv_current_top = parseInt(bonus_inv.css('top'))
-      if (bonus_inv_current_top > container_height) {
-          bonus_inv_current_top = -200
-          let bonus_inv_left = parseInt(Math.random() * (container_width - bonus_width));
+      let bonus_inv_current_top = parseInt(bonus_inv.css('top')) // SET THE CURRENT TOP POSITION ON A VARIABLE
+      if (bonus_inv_current_top > container_height) { // BRING DOWN THE OBJECT IN ORDER TO DISPLAY IT 
+          bonus_inv_current_top = -200 
+          let bonus_inv_left = parseInt(Math.random() * (container_width - bonus_width)); // SPAWN THE OBJECT RANDOMLY AND HORIZONTALY IN THE CONTAINER
           bonus_inv.css('left', bonus_inv_left)
       }
-      bonus_inv.css('top', bonus_inv_current_top + bonus_speed)
+      bonus_inv.css('top', bonus_inv_current_top + bonus_speed) // SET THE SPEED AND THE SCROLLING FROM THE OBJECT 
     }
 
     function bonus_down(bonus){
@@ -256,6 +260,7 @@ $(function() {
 
     function stop_the_game() {
         game_over = true;
+        //STOP REQUESTING THE NAVIGATOR TO REFRESH EVERY ANIMATION
         cancelAnimationFrame(anim_id)
         cancelAnimationFrame(move_right)
         cancelAnimationFrame(move_left)
@@ -292,20 +297,20 @@ $(function() {
                             //KONAMI CODE
 
 let k = [80,65,82,73,71,79]
-n = 0;
+n = 0
 $(document).keydown(function (e) {
 if (e.keyCode === k[n++]) {
    if (n === k.length) {
        police_speed = 15
        speed = 5
-       n = 0;
+       n = 0
        return false;
    }
 }
 else {
    n = 0;
 }
-});
+})
 
 
 })
