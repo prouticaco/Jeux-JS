@@ -278,23 +278,23 @@ $(function() {
         let top_1 = $div1.offset().top // TOP POSITION OF THE ELEMENT
         let height_1 = $div1.outerHeight(true) // GET THE CALCULATED HEIGHT OF THE ELEMENT, TRUE IN ORDER TO HAVE THE MARGIN
         let width_1 = $div1.outerWidth(true) // SAME WITH WIDTH
-        let left_top = left_1 + top_1 // TOP AND LEFT POSITION 
-        let height_width = height_1 + width_1 // HEIGHT AND WIDTH 
+        let top_height = top_1 + height_1 // TOP AND LEFT POSITION 
+        let left_width = left_1 + width_1 // HEIGHT AND WIDTH 
         
         let left_2 = $div2.offset().left 
         let top_2 = $div2.offset().top
         let height_2 = $div2.outerHeight(true)
         let width_2 = $div2.outerWidth(true)
         let left_top_2 = top_2 + height_2
-        let height_width_2 = left_2 + width_2
+        let left_width_2 = left_2 + width_2
         
-        // IF LEFT AND TOP POSITION OF $DIV1 IS INFERIOR AS THE TOP OF THE $DIV2 RETURN FALSE
-        // IF TOP OF $DIV1 IS SUPERIOR AS THE HEIGHT AND WIDTH OF $DIV2 RETURN FALSE 
-        // IF HEIGHT AND WIDTH OF $DIV1 IS INFERIOR AS LEFT POSITION OF $DIV2 RETURN FALSE
-        // IF LEFT POSITION OF $DIV1 IS SUPERIOR AS HEIGHT AND WIDTH OF $DIV2 RETURN FALSE 
+        // IF TOP AND HEIGHT POSITION OF $DIV1 IS INFERIOR AS THE TOP OF THE $DIV2 RETURN FALSE
+        // IF TOP OF $DIV1 IS SUPERIOR AS THE LEFT AND WIDTH OF $DIV2 RETURN FALSE 
+        // IF LEFT AND WIDTH OF $DIV1 IS INFERIOR AS LEFT POSITION OF $DIV2 RETURN FALSE
+        // IF LEFT POSITION OF $DIV1 IS SUPERIOR AS LEFT AND WIDTH OF $DIV2 RETURN FALSE 
         // OTHERWISE RETURN TRUE 
-
-        if (left_top < top_2 || top_1 > left_top_2 || height_width < left_2 || left_1 > height_width_2) return false; 
+  
+        if (top_height < top_2 || top_1 > left_width_2 || left_width < left_2 || left_1 > left_width_2) return false; 
         return true;
     }
 
