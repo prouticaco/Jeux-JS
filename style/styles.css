@@ -148,7 +148,9 @@ header li{
     width: 400px;
     background: #535c68;
     overflow: hidden;
-    margin:auto;
+    margin:auto; 
+	margin-top:200px;
+
 }
 
 #container #bg {
