@@ -115,7 +115,7 @@ header li{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 650px;
+    top: 1100px;
 }
 
 .policy a{
@@ -149,7 +149,7 @@ header li{
     background: #535c68;
     overflow: hidden;
     margin:auto; 
-	top:300px;
+    margin-top:30%;
 
 }
 
