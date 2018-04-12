@@ -64,15 +64,15 @@ h2 {
 .intro_text{
     line-height: 24px;
     font-size: 20px;
-    position: relative;
     display: inline-block;
     top: 400px;
     left: 140px;
     font-family: 'Jua', sans-serif;
     color: white;
     text-align:center;
-    width:1000px;
-    margin:left;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%)
 }
 
 .intro_text h2{
