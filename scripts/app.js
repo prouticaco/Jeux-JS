@@ -60,7 +60,7 @@ $(function() {
                 // MOVE THE CAR WITH THE CORRECT KEYCODE
 
 
-    $(document).on('keydown', function(e) {
+    $(document).keydown(function(e) {
         if (game_over === false) {
             let key = e.keyCode
             if (key === 81 && move_left === false) {
@@ -79,7 +79,7 @@ $(function() {
         }
     });
 
-    $(document).on('keyup', function(e) {
+    $(document).keyup(function(e) {
         if (game_over === false) {
             let key = e.keyCode
             if (key === 81) {
