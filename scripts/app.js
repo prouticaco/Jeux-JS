@@ -278,6 +278,7 @@ $(function() {
         let top_1 = $div1.offset().top // TOP POSITION OF THE ELEMENT
         let height_1 = $div1.outerHeight(true) // GET THE CALCULATED HEIGHT OF THE ELEMENT, TRUE IN ORDER TO HAVE THE MARGIN
         let width_1 = $div1.outerWidth(true) // SAME WITH WIDTH
+        
         let top_height = top_1 + height_1 // TOP AND LEFT POSITION 
         let left_width = left_1 + width_1 // HEIGHT AND WIDTH 
         
@@ -285,6 +286,7 @@ $(function() {
         let top_2 = $div2.offset().top
         let height_2 = $div2.outerHeight(true)
         let width_2 = $div2.outerWidth(true)
+        
         let top_height_2 = top_2 + height_2
         let left_width_2 = left_2 + width_2
         
