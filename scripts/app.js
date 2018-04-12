@@ -293,7 +293,7 @@ $(function() {
         // IF LEFT POSITION OF $DIV1 IS SUPERIOR AS HEIGHT AND WIDTH OF $DIV2 RETURN FALSE 
         // OTHERWISE RETURN TRUE 
 
-        if (left_top < top_2 || top_1 > height_width_2 || height_width < left_2 || left_1 > height_width_2) return false; 
+        if (left_top < top_2 || top_1 > left_top_2 || height_width < left_2 || left_1 > height_width_2) return false; 
         return true;
     }
 
