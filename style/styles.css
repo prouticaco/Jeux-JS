@@ -286,13 +286,12 @@ h2 {
     font-size: 15px;
 }
 #score_div{
+    font-family: 'Jua', sans-serif;
     position: absolute;
     margin-top: 50%;
     margin-left: 10%;
     font-size: 35px;
-    background-color: #e1b12c;
     padding: 10px;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2)
     z-index: 100;
 }
 
